@@ -1,4 +1,4 @@
-## ESP8266 Companion 
+## ESP8266 Companion  App
 
 ESP8266  is  a companion android app which helps to configure the [ESPClient](https://github.com/iamrajendraverma/Esp8266Client) so that it can perfectly work as a wifi button with help of Node-red. To do that  first you  have to install the firmware(ESP Client) to the mirco controller(ESP8266) then you have to follow the following steps.
 

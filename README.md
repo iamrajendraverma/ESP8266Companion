@@ -1,6 +1,6 @@
 ## ESP8266 Companion App: Configuration and Switch Logging
 
-The ESP8266 Companion app is an Android utility designed to streamline the configuration of the [ESPClient](https://github.com/iamrajendraverma/Esp8266Client) firmware, enabling seamless operation of the ESP8266 as a Wi-Fi button with Node-RED integration.
+The ESP8266 Companion app is an Android utility designed to connect the  [ESPClient](https://github.com/iamrajendraverma/Esp8266Client) to the local network. With the help of Node-red you can perform the further development.
 
 **Prerequisites:**
 
@@ -15,7 +15,7 @@ The ESP8266 Companion app is an Android utility designed to streamline the confi
 
     ![ESP8266 Client Configuration](https://github.com/user-attachments/assets/c0798bbc-92d0-4daa-84cb-6a616c3a5fe6)
 
-4.  **Connect to Cloud:** Tap the "Connect to Cloud" button within the app. Upon successful configuration, a "Config received" message will be displayed, indicating that the ESP8266 client is connected to your local Wi-Fi network.
+4.  **Connect to Local network:** Tap the "Connect to Cloud" button within the app. Upon successful configuration, a "Config received" message will be displayed, indicating that the ESP8266 client is connected to your local Wi-Fi network.
 
 **Switch Logging and Data Recording:**
 
@@ -27,3 +27,4 @@ The ESP8266 Companion app, in conjunction with Node-RED, allows you to record an
   <img src="https://github.com/user-attachments/assets/28fa407b-05f1-42e5-af0e-eb15d27cb250" style="width: 50%; height: auto; margin-right: 10px;">
   <img src="https://github.com/user-attachments/assets/8d3160d0-45bb-45d7-86bc-d31347533204" style="width: 50%; height: auto;">
 </div>
+

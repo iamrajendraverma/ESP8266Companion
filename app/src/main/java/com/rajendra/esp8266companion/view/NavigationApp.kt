@@ -1,6 +1,7 @@
 package com.rajendra.esp8266companion.view
 
 import androidx.activity.ComponentActivity
+import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -11,15 +12,20 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.rajendra.esp8266companion.R
 import com.rajendra.esp8266companion.viewmodel.ConnectionViewModel
 import com.rajendra.esp8266companion.viewmodel.SettingsViewmodel
 
@@ -58,13 +64,15 @@ fun ConnectionScreen(activity: ComponentActivity, navController: NavController) 
 @Composable
 fun APScreen(navController: NavController) {
     Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
+        modifier = Modifier.fillMaxSize().padding(top=200.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Click  the below button \n to configure the ESP8266")
+        Image(
+            painter = painterResource(R.drawable.img),
+            contentDescription = "This is MCU node",
+        )
         Button(onClick = { navController.navigate("second") }) {
-            Text(text = "Connect to ESP8266")
+            Text(text = stringResource(R.string.app_name))
         }
     }
 }
